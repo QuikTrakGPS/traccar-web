@@ -11,7 +11,27 @@
   <packaging>war</packaging>
   <version>0.10.3-SNAPSHOT</version>
   <name>Traccar Web UI</name>
+  <repositories>
+    <repository>
+      <!-- ~/.m2/settings.xml add <server/> with the support portal credentials -->
+      <id>sencha-gxt-repository</id>
+      <name>Sencha GXT Repository</name>
 
+      <!-- Commercial (with Support) -->
+      <!-- ie. 3.1.1 -->
+      <url>https://maven.sencha.com/repo/gxt-commercial-release</url>
+      <!-- ie. GXT 3.1.4, 4.0.0 -->
+      <!-- <url>https://maven.sencha.com/repo/gxt-support-commercial-release</url> -->
+      <!-- ie. GXT 3.1.5-SNAPSHOT -->
+      <!-- <url>https://maven.sencha.com/repo/gxt-commercial-snapshot</url> -->
+
+      <!-- GPL -->
+      <!-- <url>https://maven.sencha.com/repo/gxt-gpl-release</url> -->
+      <!-- <url>https://maven.sencha.com/repo/gxt-gpl-snapshot</url> -->
+      <!-- GPL with Support -->
+      <!-- <url>https://maven.sencha.com/repo/gxt-support-gpl-release</url> -->
+    </repository>
+  </repositories>
   <properties>
     <!-- Convenience property to set the hibernate version -->
     <hibernateVersion>4.3.7.Final</hibernateVersion>
@@ -114,12 +134,12 @@
        <version>3.1.1</version>
        <scope>provided</scope>
     </dependency>
-    <dependency>
+    <!-- dependency>
       <groupId>com.sencha.gxt</groupId>
-      <artifactId>gxt-theme-neptune</artifactId>
+      <artifactId>gxt-theme-gray</artifactId>
       <version>3.1.1</version>
       <scope>provided</scope>
-    </dependency>
+    </dependency> -->
     <dependency>
        <groupId>org.gwtopenmaps.openlayers</groupId>
        <artifactId>gwt-openlayers-client</artifactId>

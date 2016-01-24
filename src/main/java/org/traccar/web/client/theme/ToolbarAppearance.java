@@ -17,9 +17,9 @@ package org.traccar.web.client.theme;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;
-import com.sencha.gxt.theme.neptune.client.base.toolbar.Css3ToolBarAppearance;
+import com.sencha.gxt.theme.gray.client.toolbar.GrayToolBarAppearance;
 
-public class ToolbarAppearance extends Css3ToolBarAppearance {
+public class ToolbarAppearance extends GrayToolBarAppearance {
     public ToolbarAppearance() {
         this((ToolBarResources) GWT.create(ToolBarResources.class));
     }
@@ -28,12 +28,12 @@ public class ToolbarAppearance extends Css3ToolBarAppearance {
         super(var1);
     }
 
-    public interface ToolBarResources extends Css3ToolBarResources {
+    public interface ToolBarResources extends GrayToolBarResources {
         @ClientBundle.Source({"com/sencha/gxt/theme/base/client/container/BoxLayout.css",
-                "com/sencha/gxt/theme/neptune/client/base/container/Css3HBoxLayoutContainer.css",
-                "com/sencha/gxt/theme/neptune/client/base/toolbar/Css3ToolBar.css",
+                "com/sencha/gxt/theme/gray/client/container/GrayHBoxLayoutContainer.css",
+                "com/sencha/gxt/theme/gray/client/toolbar/GrayToolBar.css",
                 "ToolBar.css"})
         @Override
-        Css3ToolBarStyle style();
+        GrayToolBarStyle style();
     }
 }

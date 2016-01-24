@@ -17,20 +17,20 @@ package org.traccar.web.client.theme;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;
-import com.sencha.gxt.theme.neptune.client.base.window.Css3WindowAppearance;
+import com.sencha.gxt.theme.gray.client.window.GrayWindowAppearance;
 
-public class WindowAppearance extends Css3WindowAppearance {
+public class WindowAppearance extends GrayWindowAppearance {
     public WindowAppearance() {
         this((WindowResources) GWT.create(WindowResources.class), (FramedPanelTemplate)GWT.create(FramedPanelTemplate.class));
     }
 
     public WindowAppearance(WindowResources var1, FramedPanelTemplate var2) {
-        super(var1, var2);
+        super(var1);
     }
 
-    public interface WindowResources extends Css3WindowResources {
-        @ClientBundle.Source({"com/sencha/gxt/theme/neptune/client/base/window/Css3Window.css", "Window.css"})
+    public interface WindowResources extends GrayWindowResources {
+        @ClientBundle.Source({"com/sencha/gxt/theme/gray/client/window/Window.css", "Window.css"})
         @Override
-        Css3WindowStyle style();
+        GrayWindowStyle style();
     }
 }

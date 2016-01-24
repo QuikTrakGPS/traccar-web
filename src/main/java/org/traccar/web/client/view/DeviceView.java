@@ -41,7 +41,7 @@ import com.sencha.gxt.data.shared.event.StoreAddEvent;
 import com.sencha.gxt.data.shared.event.StoreRemoveEvent;
 import com.sencha.gxt.data.shared.event.StoreSortEvent;
 import com.sencha.gxt.data.shared.event.StoreUpdateEvent;
-import com.sencha.gxt.theme.neptune.client.base.tabs.Css3TabPanelBottomAppearance;
+import com.sencha.gxt.theme.gray.client.tabs.GrayTabPanelBottomAppearance;
 import com.sencha.gxt.widget.core.client.TabItemConfig;
 import com.sencha.gxt.widget.core.client.TabPanel.TabPanelAppearance;
 import com.sencha.gxt.widget.core.client.ListView;
@@ -591,7 +591,7 @@ public class DeviceView implements RowMouseDownEvent.RowMouseDownHandler, CellDo
         geoFenceHandler.setGeoFenceListView(geoFenceList);
 
         // tab panel
-        objectsTabs = new TabPanel(GWT.<TabPanelAppearance>create(Css3TabPanelBottomAppearance.class));
+        objectsTabs = new TabPanel(GWT.<TabPanelAppearance>create(GrayTabPanelBottomAppearance.class));
 
         uiBinder.createAndBindUi(this);
 

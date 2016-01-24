@@ -25,7 +25,7 @@ import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Label;
 import com.sencha.gxt.data.shared.event.StoreUpdateEvent;
-import com.sencha.gxt.theme.neptune.client.base.tabs.Css3TabPanelBottomAppearance;
+import com.sencha.gxt.theme.gray.client.tabs.GrayTabPanelBottomAppearance;
 import com.sencha.gxt.widget.core.client.TabItemConfig;
 import com.sencha.gxt.widget.core.client.TabPanel;
 import com.sencha.gxt.widget.core.client.box.AlertMessageBox;
@@ -194,7 +194,7 @@ public class ArchiveView implements SelectionChangedEvent.SelectionChangedHandle
             routeMarkersType.add(item);
         }
 
-        devicesTabs = new TabPanel(GWT.<TabPanel.TabPanelAppearance>create(Css3TabPanelBottomAppearance.class));
+        devicesTabs = new TabPanel(GWT.<TabPanel.TabPanelAppearance>create(GrayTabPanelBottomAppearance.class));
         archivePanels = new HashMap<>();
 
         uiBinder.createAndBindUi(this);
